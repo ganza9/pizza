@@ -1,3 +1,7 @@
 .table {
   display: none;
 }
+
+h1, h2, label, .form-control, table  {
+  font-family: 'Luckiest Guy', cursive;
+}
