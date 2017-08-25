@@ -55,6 +55,6 @@ $(document).ready(function(){
     $("#sizeOut").text(buyPizza.size);
     $("#priceOut").text(buyPizza.price);
 
-    $(".table").show()
+    $("#table").show();
   });
 });

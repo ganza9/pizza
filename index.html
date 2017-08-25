@@ -13,69 +13,73 @@
     <title>Buy My Pizza</title>
   </head>
   <body>
-  <div class="container">
-    <h1>Welcome to Gennaro's Pizzaria!</h1>
-    <h2>Please select your toppings and size for your pizza:</h2>
-  <form id="pizzaOrder">
-    <div class="form-group">
-      <label for="toppings">Toppings:</label>
-      <select class="form-control" id="topping1">
-        <option>Cheese</option>
-        <option>Pepperoni</option>
-        <option>Sausage</option>
-        <option>Mushroom</option>
-      </select>
+    <div class="container">
+      <h1>Welcome to Gennaro's Pizzaria!</h1>
+
+
+      <h2>Please select your toppings and size for your pizza:</h2>
+      <form id="pizzaOrder">
+        <div class="form-group">
+          <label for="toppings">Toppings:</label>
+          <select class="form-control" id="topping1">
+            <option>Cheese</option>
+            <option>Pepperoni</option>
+            <option>Sausage</option>
+            <option>Mushroom</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="toppings2">Additional Toppings:</label>
+          <select class="form-control" id="topping2">
+            <option>None</option>
+            <option>Cheese</option>
+            <option>Pepperoni</option>
+            <option>Sausage</option>
+            <option>Mushroom</option>
+          </select>
+          <label for="topping3"></label>
+          <select class="form-control" id="topping3">
+            <option>None</option>
+            <option>Cheese</option>
+            <option>Pepperoni</option>
+            <option>Sausage</option>
+            <option>Mushroom</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="size">Size:</label>
+          <select class="form-control" id="size">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+
+          <button type="submit" class="btn btn-secondary" name="button" onclick="showTable()" id="submit">Continue to checkout!</button>
+      </form>
+
+        <table class="table">
+          <tr>
+            <th>Topping 1:</th>
+            <th>Topping 2:</th>
+            <th>Topping 3:</th>
+            <th>Size:</th>
+            <th>Price:</th>
+          </tr>
+          <tr>
+            <td id="topping1Out"></td>
+            <td id="topping2Out"></td>
+            <td id="topping3Out"></td>
+            <td id="sizeOut"></td>
+            <td id="priceOut"></td>
+          </tr>
+        </table>
+      <button class="btn1" type="submit" name="button" id="finalize">Finalize Order!</button>
+
+
+      <p id="thankyou">Thank You For Your Order!</p>
     </div>
-
-    <div class="form-group">
-      <label for="toppings2">Additional Toppings:</label>
-      <select class="form-control" id="topping2">
-        <option>None</option>
-        <option>Cheese</option>
-        <option>Pepperoni</option>
-        <option>Sausage</option>
-        <option>Mushroom</option>
-      </select>
-      <label for="topping3"></label>
-      <select class="form-control" id="topping3">
-        <option>None</option>
-        <option>Cheese</option>
-        <option>Pepperoni</option>
-        <option>Sausage</option>
-        <option>Mushroom</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="size">Size:</label>
-      <select class="form-control" id="size">
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select>
-    </div>
-
-    <button type="submit" class="btn btn-secondary" name="button" onclick="showTable()" id="submit">Continue to checkout!</button>
-  </form>
-
-    <table class="table">
-      <tr>
-        <th>Topping 1:</th>
-        <th>Topping 2:</th>
-        <th>Topping 3:</th>
-        <th>Size:</th>
-        <th>Price:</th>
-      </tr>
-      <tr>
-        <td id="topping1Out"></td>
-        <td id="topping2Out"></td>
-        <td id="topping3Out"></td>
-        <td id="sizeOut"></td>
-        <td id="priceOut"></td>
-      </tr>
-    </table>
-    <!-- <button type="submit" name="button" onclick="showTable()" id="submit" >Place Order!</button> -->
-
-  </div>
   </body>
 </html>
