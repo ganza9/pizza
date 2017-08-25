@@ -19,7 +19,7 @@
       <label for="toppings">Toppings:</label>
       <select class="form-control" id="topping1">
         <option>Cheese</option>
-        <option>Anchovy</option>
+        <option>Pepperoni</option>
         <option>Sausage</option>
         <option>Mushroom</option>
       </select>
@@ -30,14 +30,15 @@
       <select class="form-control" id="topping2">
         <option>None</option>
         <option>Cheese</option>
-        <option>Anchovy</option>
+        <option>Pepperoni</option>
         <option>Sausage</option>
         <option>Mushroom</option>
       </select>
-      <select class="form-control" id="toppings">
+      <label for="topping3"></label>
+      <select class="form-control" id="topping3">
         <option>None</option>
         <option>Cheese</option>
-        <option>Anchovy</option>
+        <option>Pepperoni</option>
         <option>Sausage</option>
         <option>Mushroom</option>
       </select>
@@ -52,7 +53,7 @@
       </select>
     </div>
 
-    <button type="submit" name="button" onclick="showTable()" id="submit">Checkout!</button>
+    <button type="submit" name="button" onclick="showTable()" id="submit">Continue to checkout!</button>
   </form>
 
     <table class="table">
@@ -64,7 +65,7 @@
         <th>Price</th>
       </tr>
       <tr>
-        <td id="toppingOut"></td>
+        <td id="topping1Out"></td>
         <td id="topping2Out"></td>
         <td id="topping3Out"></td>
         <td id="sizeOut"></td>

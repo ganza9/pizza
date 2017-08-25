@@ -3,22 +3,38 @@ function Pizza(topping1, topping2, topping3, size, price) {
   this.topping2 = topping2;
   this.topping3 = topping3;
   this.size = size;
-  this.price=price;
+  this.price = price;
 }
 
-// function formula(pizzaSize) {
+function formula(pizza) {
   if (pizza.size === "Small") {
     pizza.price -= 3;
   } else if(pizza.size === "Large") {
-    pizza.price += 3;
+      pizza.price += 3;
+  } if(pizza.topping1 === "Pepperoni") {
+      pizza.price += 2;
+  } if(pizza.topping1 === "Sausage") {
+      pizza.price += 2;
+}   if(pizza.topping1 === "Mushroom") {
+      pizza.price += 2;
+  } if(pizza.topping2 === "Pepperoni") {
+      pizza.price += 2;
+  } if(pizza.topping2 === "Sausage") {
+      pizza.price += 2;
+  } if(pizza.topping2 === "Mushroom") {
+      pizza.price += 2;
+  } if(pizza.topping2 === "None") {
+      pizza.price += 0;
+  } if(pizza.topping3 === "Pepperoni") {
+      pizza.price += 2;
+  } if(pizza.topping3 === "Sausage") {
+      pizza.price += 2;
+  } if(pizza.topping3 === "Mushroom") {
+      pizza.price += 2;
+  } if(pizza.topping3 === "None") {
+      pizza.price += 0;
   }
-// }
-
-// function formula(pizzaTopping) {
-  if (pizza.topping === "Anchovy") {
-    pizza.price += 2;
-  }
-// }
+}
 
 $(document).ready(function(){
   $("#submit").click(function(event){
