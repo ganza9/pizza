@@ -6,18 +6,19 @@ function Pizza(topping1, topping2, topping3, size, price) {
   this.price=price;
 }
 
-function formula(pizza) {
+// function formula(pizzaSize) {
   if (pizza.size === "Small") {
-    pizza.price -= 2;
+    pizza.price -= 3;
   } else if(pizza.size === "Large") {
+    pizza.price += 3;
+  }
+// }
+
+// function formula(pizzaTopping) {
+  if (pizza.topping === "Anchovy") {
     pizza.price += 2;
-  } if(pizza.topping1 === "Anchovy") {
-    pizza.price += 1.5;
-  } else if(pizza.topping1 === "Sausage") {
-    pizza.price += 1.5;
-} else if(pizza.topping1 === "Mushroom") {
-  pizza.price += 1.5;}
-}
+  }
+// }
 
 $(document).ready(function(){
   $("#submit").click(function(event){
