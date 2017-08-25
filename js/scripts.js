@@ -1,7 +1,7 @@
 function Pizza(topping, topping2, topping3, size, price) {
   this.topping = topping;
   this.topping2 = topping2;
-  this.topping = topping3;
+  this.topping3 = topping3;
   this.size = size;
   this.price=price;
 }
@@ -11,7 +11,12 @@ function formula(pizza) {
     pizza.price -= 2;
   } else if(pizza.size === "Large") {
     pizza.price += 2;
-  }
+  }else if(pizza.topping === "Anchovy") {
+    pizza.price += 1.5;
+  } else if(pizza.topping === "Sausage") {
+    pizza.price += 1.5;
+} else if(pizza.topping === "Mushroom") {
+  pizza.price += 1.5;}
 }
 
 $(document).ready(function(){
