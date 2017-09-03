@@ -6,8 +6,11 @@
 
 ## Specs
 
-specs arent done, need to fix project.
+User will be able to select different pizza toppings, up to three, as well as different sizes, up to three.
 
+User will submit choices and a table will appear breaking down the selections, as well as the different pricing structure based off the selections.
+
+User will be able to finalize the order.
 
 ## Description
 
@@ -20,7 +23,7 @@ Go to https://github.com/ganza9/ping-pong and click on the clone or download but
 
 ## Known Bugs
 
-everything
+There are currently no known bugs.
 
 ## Support and contact details
 
