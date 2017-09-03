@@ -15,7 +15,7 @@ function formula(pizza) {
       pizza.price += 2;
   } if(pizza.topping1 === "Sausage") {
       pizza.price += 2;
-}   if(pizza.topping1 === "Mushroom") {
+  } if(pizza.topping1 === "Mushroom") {
       pizza.price += 2;
   } if(pizza.topping2 === "Pepperoni") {
       pizza.price += 2;
@@ -55,6 +55,14 @@ $(document).ready(function(){
     $("#sizeOut").text(buyPizza.size);
     $("#priceOut").text(buyPizza.price);
 
-    $("#table").show();
+    $(".table").show();
+    $("#finalize").show();
   });
+
+    $("#finalize").click(function(event){
+      $(".table").hide();
+      $("#thankyou").show();
+      $(".btn").hide();
+    });
+
 });
